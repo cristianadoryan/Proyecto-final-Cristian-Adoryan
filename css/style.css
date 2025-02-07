@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url(../assets/fondo.png);
+}
+
+#titulo-container {
+  background-color: white;
+  width: 100vw;
+  position: absolute;
+  top: 100px; 
+  left: 50%;
+  transform: translateX(-50%); 
+  text-align: center; 
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.products {
+  display: grid;
+  max-width: 1000px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: 1fr;
+  margin: 0 auto;
+  margin-top: 250px;
+  gap: 30px;
+  padding-bottom: 40px;
+}
+
+.product {
+  background-color: white;
+  display: flex;
+  width: 260px;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  border-radius: 20px;
+}
+
+.product:hover {
+  transform: scale(1.08); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+}
+
+.productTitle {
+  color: rgb(75, 75, 75);
+}
+
+.productPrice {
+  text-align: center;
+  padding: 10px;
+  font-weight: 600;
+}
+
+.productImage {
+  width: 160px;
+  height: 250px;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+
+.productAdd {
+  width: 140px;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+}
+
+.productAdd:hover {
+  background-color: #4ec6fd;
+  color: aliceblue;
+}
+
+.cartSidebar {
+  position: fixed;
+  top: 0;
+  right: -300px; 
+  width: 300px;
+  overflow-y: auto;
+  padding-bottom: 50px; 
+  height: 100%;
+  background-color: #ffffff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  transition: right 0.3s ease;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.cartSidebar--open {
+  right: 0; 
+}
+
+.cartClose {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border: none;
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  z-index: 1002; 
+}
+
+.cartContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.cartItems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cartItem {
+  width: 270px;
+  border: solid 1px gainsboro;
+  margin: 10px;
+  border-radius: 8px;
+  padding: 20px;
+}
+.cartItem-title {
+  font-size: bold;
+  color: rgb(82, 82, 82);
+}
+
+.cartItemPrice {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.cartSpan {
+  font-weight: bold;
+}
+
+.cartHandleQuantity {
+  width: 80px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: rgb(158, 158, 158);
+  color: white;
+}
+
+.cartDelete {
+  width: 60px;
+  height: 30px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  border-radius: 8px;
+}
+
+.cartTotalPrice {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.cartOpenButton {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.cartOpenButton:hover {
+  background-color: #555;
+}
+
+/*CONFIGURACION DEL BOTON DE BUSQUEDA*/
+.search-container {
+  position: fixed;
+  top: 20px;
+  right: 310px; 
+  display: flex;
+  align-items: center;
+  z-index: 1001;
+}
+
+.searchInput {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-right: 5px; 
+  width: 200px; 
+}
+
+.searchButton {
+  background-color: #e6e6e6;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchButton i {
+  margin-right: 5px; 
+}
+
+/*FIN DE CONF BOTON DE BUSQUEDA*/
+
+.cartItem-count {
+  position: absolute; 
+  top: 10px; 
+  right: 10px; 
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10001;
+}
+
+.cartIncrease,
+.cartDecrease,
+.cartRemove {
+  background-color: #c0c0c0;
+  padding: 5px;
+  border: 1px solid gainsboro;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cartIncrease:hover,
+.cartDecrease:hover,
+.cartRemove:hover {
+  background-color: #555;
+  color: white;
+}
+
+.cartClear {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.cartClear:hover {
+  background-color: #c9302c;
+}
+
+.cartBuy {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #3bca39;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.cartBuy:hover {
+  background-color: rgb(29, 153, 29);
+}
+.hidden {
+  display: none;
+}
+

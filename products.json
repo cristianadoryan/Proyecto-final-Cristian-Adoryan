@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Armani Code EDT 100 ml",
+    "price": 230000,
+    "image": "./assets/Armani Code EDT.png"
+  },
+  {
+    "id": 2,
+    "title": "Carolina Herrera Bad Boy EDT 100 ml",
+    "price": 220000,
+    "image": "./assets/Carolina Herrera BadBoy EDT.png"
+  },
+  {
+    "id": 3,
+    "title": "Dior Sauvage EDT 100 ml",
+    "price": 260000,
+    "image": "./assets/Dior Sauvage EDT.png"
+  },
+  {
+    "id": 4,
+    "title": "Hugo Boss Bottled EDP 100 ml",
+    "price": 230000,
+    "image": "./assets/Hugo Boss Boss Bottle EDP.png"
+  },
+  {
+    "id": 5,
+    "title": "Jean Paul Gaultier Scandal EDT 100 ml",
+    "price": 258000,
+    "image": "./assets/Jean Paul Gaultier Scandal EDT.png"
+  },
+  {
+    "id": 6,
+    "title": "Rabanne Invictus EDT 100 ml",
+    "price": 210000,
+    "image": "./assets/Rabanne Invictus EDT.png"
+  },
+  {
+    "id": 7,
+    "title": "Ralph Lauren Polo Blue EDP 125 ml",
+    "price": 240000,
+    "image": "./assets/Ralph Laurent Polo Blue EDP.png"
+  },
+  {
+    "id": 8,
+    "title": "Versace Dylan Blue EDT 100 ml",
+    "price": 205000,
+    "image": "./assets/Versace Dylan Blue EDT.png"
+  },
+  {
+    "id": 9,
+    "title": "Yves Sain Laurent Y EDP 100 ml",
+    "price": 270000,
+    "image": "./assets/Yves Saint Laurent Y EDP.png"
+  }
+]
