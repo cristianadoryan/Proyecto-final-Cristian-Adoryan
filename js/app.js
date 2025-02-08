@@ -7,11 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
   updateCartUi();
 });
 
-//BOTON DE BUSQUEDA DE PERFUMES
 document.querySelector(".searchButton").addEventListener("click",() => {
   setupSearchButton();
  })
-//FIN DE BOTON DE BUSQUEDA DE PERFUMES
 
 // boton Sidebar
 const cartOpenButton = document.querySelector(".cartOpenButton");
@@ -39,7 +37,7 @@ document.querySelector(".cartBuy").addEventListener("click",() => {
  buyCart();
 })
 
-// Manejo de la adición de productos al carrito
+// Manejo de  adición de productos al carrito
 document.getElementById("productList").addEventListener("click", (event) => {
   if (event.target.classList.contains("productAdd")) {
     const card = event.target.closest(".product");

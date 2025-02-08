@@ -58,7 +58,6 @@
     });
   };
 
-//FUNCIONES DEL BOTON BUSCAR
   export const searchProduct = async (productName) => {
     try {
       const response = await fetch("../products.json");
@@ -102,8 +101,6 @@
       searchProduct(productName);
     });
   };
-  //FIN DE FUNCIONES DEL BOTON
-
 
   export const updateCartUi = () => {
     const cartContainer = document.querySelector(".cartItems");

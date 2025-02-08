@@ -191,7 +191,6 @@ body {
   background-color: #555;
 }
 
-/*CONFIGURACION DEL BOTON DE BUSQUEDA*/
 .search-container {
   position: fixed;
   top: 20px;
@@ -224,8 +223,6 @@ body {
 .searchButton i {
   margin-right: 5px; 
 }
-
-/*FIN DE CONF BOTON DE BUSQUEDA*/
 
 .cartItem-count {
   position: absolute; 
